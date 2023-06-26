@@ -1,0 +1,9 @@
+helm:
+  chart: <CHART>
+  takeOwnership: false
+  version: <VERSION>
+
+targetCustomizations:
+  - name: <TARGET_CUST_1>
+    clusterName: <CLUSTER_NAME>
+    
