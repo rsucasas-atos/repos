@@ -1,0 +1,9 @@
+helm:
+  chart: oci://registry-1.docker.io/bitnamicharts/nginx
+  takeOwnership: false
+  version: <VERSION>
+
+targetCustomizations:
+  - name: <TARGET_CUST_1>
+    clusterName: <CLUSTER_NAME>
+    
