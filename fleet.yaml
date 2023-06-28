@@ -4,21 +4,21 @@ helm:
   # This allows one to download charts from most any location.  Also know that
   # go-getter URL supports adding a digest to validate the download. If repo
   # is set below this field is the name of the chart to lookup
-  #chart: <CHART>
+  #chart: https://github.com/edge-orchestration/app-fleet-demo/tree/main/app/charts/rmq-demo
   # A https URL to a Helm repo to download the chart from. It's typically easier
   # to just use `chart` field and refer to a tgz file.  If repo is used the
   # value of `chart` will be used as the chart name to lookup in the Helm repository.
-  repo: <REPO>
+  repo: https://github.com/edge-orchestration/app-fleet-demo/tree/main/app/charts/rmq-demo
   # Makes helm skip the check for its own annotations
   takeOwnership: false
   # The version of the chart or semver constraint of the chart to find. If a constraint
   # is specified it is evaluated each time git changes.
   # The version also determines which chart to download from OCI registries.
-  version: <VERSION>
+  version: 0.2.2
 
 targetCustomizations:
-  - name: <TARGET_1>
-    clusterName: <CLUSTER_NAME_1>
+  - name: edge-1-microk8s
+    clusterName: edge-1-microk8s
     
 
 
