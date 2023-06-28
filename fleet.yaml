@@ -19,8 +19,6 @@ helm:
   # The version also determines which chart to download from OCI registries.
   version: 0.1.0
 
-  values:
-    clientSecretName: auth-kd4bv
 
 targetCustomizations:
   - name: edge-2-microk8s
