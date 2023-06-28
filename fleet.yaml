@@ -4,21 +4,21 @@ helm:
   # This allows one to download charts from most any location.  Also know that
   # go-getter URL supports adding a digest to validate the download. If repo
   # is set below this field is the name of the chart to lookup
-  chart: kafka
+  chart: oci://registry-1.docker.io/bitnamicharts/nginx
   # A https URL to a Helm repo to download the chart from. It's typically easier
   # to just use `chart` field and refer to a tgz file.  If repo is used the
   # value of `chart` will be used as the chart name to lookup in the Helm repository.
-  repo: https://head.eu-west1-rancher.edge-clusters.net/v1/catalog.cattle.io.clusterrepos/helm-charts
+  #repo: https://head.eu-west1-rancher.edge-clusters.net/v1/catalog.cattle.io.clusterrepos/helm-charts
   # Makes helm skip the check for its own annotations
   takeOwnership: false
   # The version of the chart or semver constraint of the chart to find. If a constraint
   # is specified it is evaluated each time git changes.
   # The version also determines which chart to download from OCI registries.
-  version: 21.4.4
+  version: 15.0.2
 
 targetCustomizations:
-  - name: edge-1-microk8s
-    clusterName: edge-1-microk8s
+  - name: edge-2-microk8s
+    clusterName: edge-2-microk8s
     
 
 
