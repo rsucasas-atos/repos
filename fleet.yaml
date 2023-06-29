@@ -8,7 +8,7 @@ helm:
   # A https URL to a Helm repo to download the chart from. It's typically easier
   # to just use `chart` field and refer to a tgz file.  If repo is used the
   # value of `chart` will be used as the chart name to lookup in the Helm repository.
-  repo: https://github.com/edge-orchestration/helm-charts/blob/main
+  repo: https://github.com/edge-orchestration/helm-charts/blob/main/kafka-21.4.4.tgz
   # Makes helm skip the check for its own annotations
   takeOwnership: false
   # The version of the chart or semver constraint of the chart to find. If a constraint
