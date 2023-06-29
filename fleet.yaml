@@ -8,7 +8,7 @@ helm:
   # A https URL to a Helm repo to download the chart from. It's typically easier
   # to just use `chart` field and refer to a tgz file.  If repo is used the
   # value of `chart` will be used as the chart name to lookup in the Helm repository.
-  repo: https://raw.githubusercontent.com/edge-orchestration/helm-charts/main/
+  repo: https://raw.githubusercontent.com/edge-orchestration/helm-charts/main/index.yaml?token=GHSAT0AAAAAACEMIEICFRZ6SPCCKVDTSK6KZE5OBMA
   # Makes helm skip the check for its own annotations
   takeOwnership: false
   # The version of the chart or semver constraint of the chart to find. If a constraint
